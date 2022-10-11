@@ -99,9 +99,18 @@ function verificaColisaoRaqueteOp(){
 }
 
 function incluirPlacar(){
-  fill(225);
-  text(meusPontos, 278, 26);
-  text(pontosOp, 321, 26);
+  stroke(255);
+  textSize(16);
+  textAlign(CENTER);
+  fill(color(255, 140,0));
+  rect(150, 10,40, 20); 
+  fill(225); 
+  text(meusPontos, 170, 26);
+  fill(color(255, 140,0))
+  rect(450, 10,40, 20);
+  fill(225); 
+  text(pontosOp, 470, 26);
+  
   
 }
 

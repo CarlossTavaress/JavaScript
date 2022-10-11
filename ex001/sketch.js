@@ -15,6 +15,9 @@ let velocidadeyOp;
 let velocidadexBolinha = 5;
 let velocidadeyBolinha = 5;
 
+let meusPontos = 0;
+let pontosOp = 0;
+
 function setup() {
   createCanvas(600, 400);
 }
@@ -29,6 +32,10 @@ function draw() {
   movimentaRaquete();
   verificaColisaoRaquete();
   movimentaRaqueteOp();
+  verificaColisaoRaqueteOp();
+  incluirPlacar();
+  marcarPontos()
+  
   
 }
 
@@ -81,6 +88,29 @@ function verificaColisaoRaquete(){
 function movimentaRaqueteOp(){
   
   velocidadeyOp = yBolinha - yRaqueteOp - raqueteComprimento / 2 -30;
-  yRaqueteOp += velocidadeyOp;
+  yRaqueteOp += velocidadeyOp;  
+}
+
+
+function verificaColisaoRaqueteOp(){
+  if(xBolinha - raio < raqueteComprimento + xRaqueteOp && yBolinha - raio > yRaqueteOp + raqueteAltura && yBolinha + raio < yRaqueteOp){
+      
+  }
+}
+
+function incluirPlacar(){
+  fill(225);
+  text(meusPontos, 278, 26);
+  text(pontosOp, 321, 26);
   
 }
+
+function marcarPontos(){
+  if(xBolinha > 590){
+    meusPontos += 1;
+  }
+  if(xBolinha < 10){
+    pontosOp += 1;
+  }
+}
+

@@ -8,6 +8,10 @@ let yRaquete = 150;
 let raqueteComprimento = 10;
 let raqueteAltura = 90;
 
+let xRaqueteOp = 585
+let yRaqueteOp = 150;
+let velocidadeyOp;
+
 let velocidadexBolinha = 5;
 let velocidadeyBolinha = 5;
 
@@ -20,9 +24,11 @@ function draw() {
   mostraBolinha(); 
   movimentaBolinha();
   verificaColisaoBorda();
-  mostraRaquete();
+  mostraRaquete(xRaquete, yRaquete);
+  mostraRaqueteOponente(xRaqueteOp, yRaqueteOp);
   movimentaRaquete();
   verificaColisaoRaquete();
+  movimentaRaqueteOp();
   
 }
 
@@ -47,9 +53,15 @@ function verificaColisaoBorda(){
   
 }
 
-function mostraRaquete(){
-  rect(xRaquete,yRaquete,raqueteComprimento, raqueteAltura);
+function mostraRaquete(x,y){
+  rect(x,y,raqueteComprimento, raqueteAltura);
 }
+
+function mostraRaqueteOponente(x,y){
+  rect(x,y, raqueteComprimento, raqueteAltura);
+}
+
+
 
 function movimentaRaquete(){
   if(keyIsDown(UP_ARROW)){
@@ -64,4 +76,11 @@ function verificaColisaoRaquete(){
   if(xBolinha - raio < raqueteComprimento + xRaquete && yBolinha - raio < yRaquete + raqueteAltura && yBolinha + raio > yRaquete){
     velocidadexBolinha *= -1;   
   }
+}
+
+function movimentaRaqueteOp(){
+  
+  velocidadeyOp = yBolinha - yRaqueteOp - raqueteComprimento / 2 -30;
+  yRaqueteOp += velocidadeyOp;
+  
 }

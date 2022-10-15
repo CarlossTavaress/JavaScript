@@ -6,16 +6,11 @@ function imprimeTexto(texto){
     console.log(texto)
 }
 
-// imprimeTexto("Olá, tudo bem?")
+imprimeTexto("Olá, tudo bem?");
+imprimeTexto("Tudo bem sim! e com você?");
 
-function verificadorIdade(idadeCliente){
-    if(idadeCliente >= 18){
-        console.log("autorizado!")
-    }else {
-        console.log("negado!")
-    }
+
+function soma(){
+    return 2 + 2 ;   
 }
-
-const idadeCliente = 25;
-
-verificadorIdade(idadeCliente);
+imprimeTexto(soma());

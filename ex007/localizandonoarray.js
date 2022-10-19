@@ -5,7 +5,7 @@ let listaNotasEAlunos = [alunos, notas];
 
 const exibeAluno = (nomeAluno) => {
     if(listaNotasEAlunos[0].includes(nomeAluno)){
-        indice = listaNotasEAlunos[0].indexOf(nomeAluno)
+       let indice = listaNotasEAlunos[0].indexOf(nomeAluno)
         return listaNotasEAlunos[0][indice] + ' sua nota é: ' + listaNotasEAlunos[1][indice]
     }else {
         return 'Aluno não encontrado'

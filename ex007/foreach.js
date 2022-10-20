@@ -1,11 +1,9 @@
-const notas = [9.6, 10, 8, 7.9];
+const notas = [9.6, 10, 8, 10];
 let somaNotas = 0;
 
-notas.forEach(nota => {
-    somaNotas = somaNotas + nota
+notas.forEach( nota => {
+    
+    somaNotas += nota;
 })
 
-let media = somaNotas / notas.length;
-
-
-console.log(media);
+console.log(somaNotas / notas.length)

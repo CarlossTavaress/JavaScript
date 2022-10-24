@@ -6,3 +6,4 @@ const cliente = {
 }
 
 console.log(`Nome: ${cliente.nome} - Idade: ${cliente.idade}`);
+console.log(`CPF: ${cliente.cpf.substring(0,3)}...`)

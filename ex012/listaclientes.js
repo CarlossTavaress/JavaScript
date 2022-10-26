@@ -1,4 +1,4 @@
-const cliente = {
+const cliente = [{
     nome : "DrLove",
     idade : 25,
     cpf : "1923881241129",
@@ -13,9 +13,24 @@ const cliente = {
         nome: "Lux",
         parentesco: "Cachorro",
         idade: 1
-    }],
-    saldo: 985413,
-    depositar : function(valor){
-        this.saldo += valor        
-    }
-}
+    }]
+}, {
+    nome: "Juliana",
+    idade: 33,
+    cpf: "91231824812",
+    email: "jualura@gmail.com",
+    dependentes : [{
+        nome: "natalia",
+        idade: 12,
+        parentesco: "filha"
+    }, {
+        nome: "Ana",
+        idade: 14,
+        parentesco: "filha"
+    }]
+}]
+
+const listaDependentes = [...cliente[0].dependentes, ...cliente[1].dependentes];
+
+console.table(listaDependentes);
+console.log(typeof listaDependentes)

@@ -13,4 +13,3 @@ function cliente(nome, cpf, email, saldo){
 
 const drLove = new cliente("DrLove", "81287381248", "drlove@contato.com", 300000);
 
-if()

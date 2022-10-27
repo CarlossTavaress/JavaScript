@@ -1,10 +1,11 @@
 const precosLivros = [25, 30, 15, 50, 45, 20];
  
-let menor = 0;
+let menorPreco = 0;
 
-for (let atual = 0; atual < precosLivros.length; atual++){    
-    if (precosLivros[atual] < precosLivros[menor]){
-        menor = atual
+for(atual = 0; atual < precosLivros.length; atual++){
+    if(precosLivros[atual] < precosLivros[menorPreco]){
+        menorPreco = atual
     }
 }
-console.log(`O preço do livro mais barato custa: R$ ${precosLivros[menor]}`)
+
+console.log(`Menor preço dos livros: R$ ${precosLivros[menorPreco]}`)

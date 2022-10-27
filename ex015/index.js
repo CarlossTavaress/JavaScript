@@ -1,13 +1,18 @@
-const livros = riquire('ex015/listaLivros');
+const livros = require('./listaLivros');
  
-let menorPreco = 0;
 
-for(atual = 0; atual < livros.length; atual++){
-    if(livros[atual].preco < livros[menorPreco].preco){
+
+function ordenaPosicao(arrProdutos, posicaoInicial){
+    let menorPreco = posicaoInicial;
+    for(atual = 0; atual < arrProdutos.length; atual++){
+    if(arrProdutos[atual].preco < arrProdutos[menorPreco].preco){
         menorPreco = atual
     }
 }
+    return menorPreco;
+}
+
 
 console.log(`Menor preço dos livros: R$ ${livros[menorPreco].preco} e o titulo é ${livros[menorPreco].titulo}`)
 
-//erro na definição do riquire
+module.exports = ordenaPosicao;

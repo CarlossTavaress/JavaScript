@@ -1,4 +1,4 @@
-const livros = require('./listaLivros');
+const livros = require('./listaLivros'); // usa o array ( objeto do outro arquivo)
  
 
 

@@ -16,7 +16,7 @@ class Cliente{
     }
 }
 
-const drLove = new Cliente("DrLove", "drlove@contato", "1023182481241", 907739222);
+const drLove = new Cliente("DrLove", "drlove@contato", "1023182481241", 907739222); // herança do código
 
 drLove.depositar(20000)
 drLove.exibirSaldo()

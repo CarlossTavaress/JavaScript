@@ -16,8 +16,8 @@ class Cliente{
     }
 }
 
-class ClientePoupanca extends Cliente{
-    constructor(nome, email, cpf, saldo, saldoPoup){
+class ClientePoupanca extends Cliente{ // extends usado para importar atributos de outras classes
+    constructor(nome, email, cpf, saldo, saldoPoup){ //constructor usado para criar atributos
         super(nome,email, cpf, saldo)
         this.saldoPoup = saldoPoup
     }

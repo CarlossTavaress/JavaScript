@@ -13,6 +13,13 @@ function juntaListas(lista1, lista2){
         if(produtoAtualLista1.preco < produtoAtualLista2.preco){
             listaFinal[atual] = produtoAtualLista1;
             posicaoAtualLista1++;
+        }else{
+            listaFinal[atual] = produtoAtualLista2;
+            posicaoAtualLista2++;
         }
-    }
+        atual++;
+    } 
+    return listaFinal;
 }
+
+console.log(juntaListas(edFolha, edGalho));

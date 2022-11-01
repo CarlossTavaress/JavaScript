@@ -32,3 +32,5 @@ function ordena(part1, part2){
 }
 
 console.log(margeSort(listaLivros));
+
+// exercício nao funcionando

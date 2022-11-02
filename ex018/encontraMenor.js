@@ -15,15 +15,16 @@ function encontrMenor(pivo, array){
 }
 
 function trocaLugar(array, de, para){
-    let elemn1 = array[de]
-    let elemn2 = array[para]
+    const elem1 = array[de]
+    const elem2 = array[para]
 
-    array[de] = elemn1;
-    array[para] = elemn2;
+    array[para] = elem1;
+    array[de] = elem2;
 };
 
-function divideNoPivo(array){
-    let pivo = array[Math.floor(array.length / 2)];
+
+function divideNoPivo(array){    
+    let pivo = array[Math.floor(array.length / 2)];    
     encontrMenor(pivo, array);
     let valoresMenores = 0;
 

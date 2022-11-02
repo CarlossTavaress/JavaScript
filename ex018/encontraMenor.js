@@ -1,8 +1,5 @@
 const listaLivros = require('./array');
 
-console.log(listaLivros)
-console.log("depois da ordenação")
-
 let menorValor = 0;
 
 function encontrMenor(pivo, array){
@@ -24,5 +21,11 @@ function trocaLugar(array, de, para){
     array[de] = elemn1;
     array[para] = elemn2;
 };
+
+function divideNoPivo(array){
+    let pivo = Math.floor(array.length / 2);
+    encontrMenor(pivo, array);
+    let valoresMenores = 0;
+}
 
 console.log(encontrMenor(listaLivros[2], listaLivros));

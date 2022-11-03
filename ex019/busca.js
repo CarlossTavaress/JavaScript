@@ -4,7 +4,7 @@ function busca(array, de, ate, valorBusca){ // "de" é onde o indice começa e "
     const meio = Math.floor((de + ate) / 2);
     const atual = array[meio];
     
-    if(de > ate){
+    if(de > ate){ // condição de erro
         console.log("Valor não encontrado!");
         return -1;        
     }

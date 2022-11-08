@@ -5,10 +5,16 @@ function trataErro(erro){
     throw new Error(erro.code, 'não há arquivo para ser lido no diretório');
 }
 
-function pegaArquivo(caminhoDoArquivo){
-    const encoding = 'utf-8';
-    const texto = fs.promises.readFile(caminhoDoArquivo, encoding)
-    console.log(texto);
+async function pegaArquivo(caminhoDoArquivo){
+    try{
+
+        const encoding = 'utf-8';
+        const texto =  await fs.promises.readFile(caminhoDoArquivo, encoding)
+        console.log(texto);
+    } catch(erro){
+        trataErro(erro)
+    }
+
 }
 
 /*
@@ -20,6 +26,6 @@ function pegaArquivo(caminhoDoArquivo){
 }
 */
 
-pegaArquivo('./importacao/ex01/texto.md')
+pegaArquivo('./importacao/ex01/texto1.md')
 
 

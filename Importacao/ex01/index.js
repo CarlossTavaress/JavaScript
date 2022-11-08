@@ -1,4 +1,9 @@
 import fs from 'fs';
+
+
+function trataErro(erro){
+    throw
+}
  
 function pegaArquivo(caminhoDoArquivo){
     const encoding = 'utf-8';

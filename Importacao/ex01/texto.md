@@ -6,4 +6,3 @@ Teste de retorno 400. gatinho salsicha
 
 A interface File provê informações sobre arquivos e permite ao JavaScript  a acessar seu conteúdo.
 
-obrigado Liiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii S2

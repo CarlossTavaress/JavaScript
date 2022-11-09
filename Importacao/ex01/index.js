@@ -22,5 +22,6 @@ pegaArquivo('./importacao/ex01/texto1.md');
 
 
 // \[[^[\]]*?\]
+// \(https?:\/\/[^\s?#.].[^\s]*\)
 
 

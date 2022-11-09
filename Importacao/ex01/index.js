@@ -18,15 +18,9 @@ async function pegaArquivo(caminhoDoArquivo){
 
 }
 
-/*
-function pegaArquivo(caminhoDoArquivo){
-    const encoding = 'utf-8';
-    fs.promises.readFile(caminhoDoArquivo, encoding)
-    .then((texto) => console.log(texto))
-    .catch((texto) => trataErro(erro))
-}
-*/
+pegaArquivo('./importacao/ex01/texto1.md');
 
-pegaArquivo('./importacao/ex01/texto1.md')
+
+// \[[^[\]]*?\]
 
 

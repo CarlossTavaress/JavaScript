@@ -2,7 +2,7 @@ import fs from 'fs';
 
 
 function trataErro(erro){
-    throw new Error(erro.code, 'Arquivo não encontrado no diretório'); // caso de erro, está função irá retornar o tipo do erro e a mensagem escrita.
+    throw new Error(erro.code, 'Arquivo não encontrado no diretório'); // caso de erro, está função irá retornar o tipo do erro e a mensagem 
 
 }
 
@@ -27,8 +27,6 @@ async function pegaArquivo(caminhoDoArquivo){
 }
 
 //pegaArquivo('./importacao/ex01/texto.md');
-
-
 
 
 // \[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)

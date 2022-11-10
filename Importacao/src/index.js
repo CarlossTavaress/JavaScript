@@ -14,12 +14,6 @@ function extraiLink(texto){
     return resultado;
 }
 
-
-
-
-
-
-
 async function pegaArquivo(caminhoDoArquivo){
     try{
 
@@ -32,8 +26,13 @@ async function pegaArquivo(caminhoDoArquivo){
 
 }
 
-pegaArquivo('./importacao/ex01/texto.md');
+//pegaArquivo('./importacao/ex01/texto.md');
+
+
+
 
 // \[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)
 
+
+export default pegaArquivo;
 

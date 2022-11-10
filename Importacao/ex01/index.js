@@ -11,27 +11,28 @@ function extraiLink(texto){
     const captura = [...texto.matchAll(regex)];
     console.log(captura);
     const resultado = captura.map(captura =>( {[captura[1]] : captura[2]}))
-    console.log(resultado)
+    return resultado;
 }
 
 
 
 
-extraiLink(textoTeste);
+
+
 
 async function pegaArquivo(caminhoDoArquivo){
     try{
 
         const encoding = 'utf-8';
         const texto =  await fs.promises.readFile(caminhoDoArquivo, encoding)
-        console.log(texto);
+       console.log(extraiLink(texto));
     } catch(erro){
         trataErro(erro)
     }
 
 }
 
-//pegaArquivo('./importacao/ex01/texto.md');
+pegaArquivo('./importacao/ex01/texto.md');
 
 // \[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)
 

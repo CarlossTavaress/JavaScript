@@ -11,7 +11,7 @@ function extraiLink(texto){
     const captura = [...texto.matchAll(regex)];
     console.log(captura);
     const resultado = captura.map(captura =>( {[captura[1]] : captura[2]}))
-    return resultado;
+    return resultado.length !== 0 ? resultado : 'não há links no arquivo';
 }
 
 async function pegaArquivo(caminhoDoArquivo){
@@ -26,7 +26,7 @@ async function pegaArquivo(caminhoDoArquivo){
 
 }
 
-//pegaArquivo('./importacao/ex01/texto.md');
+pegaArquivo('./importacao/ex01/texto.md');
 
 
 // \[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)

@@ -6,7 +6,8 @@
     "type": "module",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "cli": "node ./scr/cli.js"
+      "cli": "node ./scr/cli.js ./importacao/ex01/texto.md",
+      "Cli:valida": "cli: node ./scr/cli.js ./importacao/ex01/texto.md -- valida"
       
     },
     "repository": {

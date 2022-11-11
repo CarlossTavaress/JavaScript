@@ -6,13 +6,13 @@ import fs from "fs";
 const caminho = process.argv;
 pegaArquivo(caminho[2]);
 
-function imprimeLista(valida, resultado, identificador = ''){
+async function  imprimeLista(valida, resultado, identificador = ''){
 
     if(valida){
             console.log((
         'Lista validada'),
         identificador,
-        validaLinks(resultado));
+        await validaLinks(resultado));
     }else{
             console.log((
         'Lista de links'),

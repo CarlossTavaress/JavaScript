@@ -3,16 +3,20 @@ function extraiLinks (arrLinks){
 }
 
 async function checaStatus(listUrls){
-    return  listUrls.map(async(url) => {
-        const response = await fetch(url)
-        return response.status;
-    })
+    const arrStatus = await Promise.all(
+        listUrls.map(async(url) => {
+          const response = await fetch(url)
+          return response.status;
+      })
+
+    )
+    return arrStatus;
 }
 
 
-export default function validaLinks(listaDeLinks){
+export default async function validaLinks(listaDeLinks){
     const links =  extraiLinks(listaDeLinks);
-    const status = checaStatus(links);
+    const status = await checaStatus(links);
     console.log(status);
     return status;
 

@@ -19,7 +19,7 @@ async function checaStatus(listUrls){
     return arrStatus;
 }
 
-function manejaErros(erro){
+function manejaErros(erro){ //validação de status
     if(erro.cause.code === 'ENOTFOUND'){
         return 'Link não encontrado'
     }else{

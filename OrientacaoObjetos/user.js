@@ -4,8 +4,16 @@ const userr = {
     nascimento: "03/06/1997",
     role: "admin",
     ativo: true,
-    exibirNomes: function {
-        console.log(this.nome, this.email)
+    exibirInfo: function() {
+        console.log(this.nome, this.email);
     }
-
 }
+
+//userr.exibirInfo();
+
+const exibir = function(){
+    console.log(this.nome);
+}
+
+const exibirNome = exibir.bind(userr);
+exibirNome();

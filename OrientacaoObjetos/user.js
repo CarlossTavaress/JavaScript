@@ -8,5 +8,5 @@ const aluno = {
         geografia: boolAproved,
         matemática: boolAproved,
         física: boolAproved,
-    }
+    },
 }

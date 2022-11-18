@@ -1,6 +1,24 @@
 {
   "dependencies": {
-    "chalk": "5.0.1"    
-  }
-  
+    "chalk": "5.0.1"
+  },
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlossTavaress/JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlossTavaress/JavaScript/issues"
+  },
+  "homepage": "https://github.com/CarlossTavaress/JavaScript#readme",
+  "description": ""
 }
